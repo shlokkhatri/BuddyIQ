@@ -1,0 +1,310 @@
+{
+  "Biology": [
+    {
+      "chapter_num": 1,
+      "part": 1,
+      "title": "Sexual Reproduction in Flowering Plants",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 1 - Sexual Reproduction in Flowering Plants.pdf"
+    },
+    {
+      "chapter_num": 2,
+      "part": 1,
+      "title": "Human Reproduction",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 2 - Human Reproduction.pdf"
+    },
+    {
+      "chapter_num": 3,
+      "part": 1,
+      "title": "Reproductive Health",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 3 - Reproductive Health.pdf"
+    },
+    {
+      "chapter_num": 4,
+      "part": 1,
+      "title": "Principles of Inheritance and Variation",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 4 - Principles of Inheritance and Variation.pdf"
+    },
+    {
+      "chapter_num": 5,
+      "part": 1,
+      "title": "Molecular Basis of Inheritance",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 5 - Molecular Basis of Inheritance.pdf"
+    },
+    {
+      "chapter_num": 6,
+      "part": 1,
+      "title": "Evolution",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 6 - Evolution.pdf"
+    },
+    {
+      "chapter_num": 7,
+      "part": 1,
+      "title": "Human Health and Disease",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 7 - Human Health and Disease.pdf"
+    },
+    {
+      "chapter_num": 8,
+      "part": 1,
+      "title": "Microbes in Human Welfare",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 8 - Microbes in Human Welfare.pdf"
+    },
+    {
+      "chapter_num": 9,
+      "part": 1,
+      "title": "Biotechnology - Principles and Processes",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 9 - Biotechnology - Principles and Processes.pdf"
+    },
+    {
+      "chapter_num": 10,
+      "part": 1,
+      "title": "Biotechnology and its Applications",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 10 - Biotechnology and its Applications.pdf"
+    },
+    {
+      "chapter_num": 11,
+      "part": 1,
+      "title": "Organisms and Populations",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 11 - Organisms and Populations.pdf"
+    },
+    {
+      "chapter_num": 12,
+      "part": 1,
+      "title": "Ecosystem",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 12 - Ecosystem.pdf"
+    },
+    {
+      "chapter_num": 13,
+      "part": 1,
+      "title": "Biodiversity and Conservation",
+      "path": "NOTEBOOKS\\XII-Biology\\Chapter 13 - Biodiversity and Conservation.pdf"
+    }
+  ],
+  "Chemistry": [
+    {
+      "chapter_num": 1,
+      "part": 1,
+      "title": "Solutions",
+      "path": "NOTEBOOKS\\XII-Chemistry Part 1\\Chapter 1 - Solutions.pdf"
+    },
+    {
+      "chapter_num": 2,
+      "part": 1,
+      "title": "Electrochemistry",
+      "path": "NOTEBOOKS\\XII-Chemistry Part 1\\Chapter 2 - Electrochemistry.pdf"
+    },
+    {
+      "chapter_num": 3,
+      "part": 1,
+      "title": "Chemical Kinetics",
+      "path": "NOTEBOOKS\\XII-Chemistry Part 1\\Chapter 3 - Chemical Kinetics.pdf"
+    },
+    {
+      "chapter_num": 4,
+      "part": 1,
+      "title": "d and f Block Elements",
+      "path": "NOTEBOOKS\\XII-Chemistry Part 1\\Chapter 4 - d and f Block Elements.pdf"
+    },
+    {
+      "chapter_num": 5,
+      "part": 1,
+      "title": "Coordination Compounds",
+      "path": "NOTEBOOKS\\XII-Chemistry Part 1\\Chapter 5 - Coordination Compounds.pdf"
+    },
+    {
+      "chapter_num": 1,
+      "part": 2,
+      "title": "Haloalkanes and Haloarenes",
+      "path": "NOTEBOOKS\\XII-Chemistry Part 2\\Chapter 1 - Haloalkanes and Haloarenes.pdf"
+    },
+    {
+      "chapter_num": 2,
+      "part": 2,
+      "title": "Alcohols, Phenols and Ethers",
+      "path": "NOTEBOOKS\\XII-Chemistry Part 2\\Chapter 2 - Alcohols, Phenols and Ethers.pdf"
+    },
+    {
+      "chapter_num": 3,
+      "part": 2,
+      "title": "Aldehydes, Ketones and Carboxylic Acids",
+      "path": "NOTEBOOKS\\XII-Chemistry Part 2\\Chapter 3 - Aldehydes, Ketones and Carboxylic Acids.pdf"
+    },
+    {
+      "chapter_num": 4,
+      "part": 2,
+      "title": "Amines",
+      "path": "NOTEBOOKS\\XII-Chemistry Part 2\\Chapter 4 - Amines.pdf"
+    },
+    {
+      "chapter_num": 5,
+      "part": 2,
+      "title": "Biomolecules",
+      "path": "NOTEBOOKS\\XII-Chemistry Part 2\\Chapter 5 - Biomolecules.pdf"
+    }
+  ],
+  "Maths": [
+    {
+      "chapter_num": 1,
+      "part": 1,
+      "title": "Relations and Functions",
+      "path": "NOTEBOOKS\\XII-Maths Part 1\\Chapter 1 - Relations and Functions.pdf"
+    },
+    {
+      "chapter_num": 2,
+      "part": 1,
+      "title": "Inverse Trigonometric Functions",
+      "path": "NOTEBOOKS\\XII-Maths Part 1\\Chapter 2 - Inverse Trigonometric Functions.pdf"
+    },
+    {
+      "chapter_num": 3,
+      "part": 1,
+      "title": "Matrices",
+      "path": "NOTEBOOKS\\XII-Maths Part 1\\Chapter 3 - Matrices.pdf"
+    },
+    {
+      "chapter_num": 4,
+      "part": 1,
+      "title": "Determinants",
+      "path": "NOTEBOOKS\\XII-Maths Part 1\\Chapter 4 - Determinants.pdf"
+    },
+    {
+      "chapter_num": 5,
+      "part": 1,
+      "title": "Continuity and Differentiability",
+      "path": "NOTEBOOKS\\XII-Maths Part 1\\Chapter 5 - Continuity and Differentiability.pdf"
+    },
+    {
+      "chapter_num": 6,
+      "part": 1,
+      "title": "Application of Derivatives",
+      "path": "NOTEBOOKS\\XII-Maths Part 1\\Chapter 6 - Application of Derivatives.pdf"
+    },
+    {
+      "chapter_num": 1,
+      "part": 2,
+      "title": "Integrals",
+      "path": "NOTEBOOKS\\XII-Maths Part 2\\Chapter 1 - Integrals.pdf"
+    },
+    {
+      "chapter_num": 2,
+      "part": 2,
+      "title": "Application of Integrals",
+      "path": "NOTEBOOKS\\XII-Maths Part 2\\Chapter 2 - Application of Integrals.pdf"
+    },
+    {
+      "chapter_num": 3,
+      "part": 2,
+      "title": "Differential Equations",
+      "path": "NOTEBOOKS\\XII-Maths Part 2\\Chapter 3 - Differential Equations.pdf"
+    },
+    {
+      "chapter_num": 4,
+      "part": 2,
+      "title": "Vector Algebra",
+      "path": "NOTEBOOKS\\XII-Maths Part 2\\Chapter 4 - Vector Algebra.pdf"
+    },
+    {
+      "chapter_num": 5,
+      "part": 2,
+      "title": "Three Dimensional Geometry",
+      "path": "NOTEBOOKS\\XII-Maths Part 2\\Chapter 5 - Three Dimensional Geometry.pdf"
+    },
+    {
+      "chapter_num": 6,
+      "part": 2,
+      "title": "Linear Programming",
+      "path": "NOTEBOOKS\\XII-Maths Part 2\\Chapter 6 - Linear Programming.pdf"
+    },
+    {
+      "chapter_num": 7,
+      "part": 2,
+      "title": "Probability",
+      "path": "NOTEBOOKS\\XII-Maths Part 2\\Chapter 7 - Probability.pdf"
+    }
+  ],
+  "Physics": [
+    {
+      "chapter_num": 1,
+      "part": 1,
+      "title": "Electric Charges and Fields",
+      "path": "NOTEBOOKS\\XII-Physics Part 1\\Chapter 1 - Electric Charges and Fields.pdf"
+    },
+    {
+      "chapter_num": 2,
+      "part": 1,
+      "title": "Electrostatic Potential and Capacitance",
+      "path": "NOTEBOOKS\\XII-Physics Part 1\\Chapter 2 - Electrostatic Potential and Capacitance.pdf"
+    },
+    {
+      "chapter_num": 3,
+      "part": 1,
+      "title": "Current Electricity",
+      "path": "NOTEBOOKS\\XII-Physics Part 1\\Chapter 3 - Current Electricity.pdf"
+    },
+    {
+      "chapter_num": 4,
+      "part": 1,
+      "title": "Moving Charges and Magnetism",
+      "path": "NOTEBOOKS\\XII-Physics Part 1\\Chapter 4 - Moving Charges and Magnetism.pdf"
+    },
+    {
+      "chapter_num": 5,
+      "part": 1,
+      "title": "Magnetism and Matter",
+      "path": "NOTEBOOKS\\XII-Physics Part 1\\Chapter 5 - Magnetism and Matter.pdf"
+    },
+    {
+      "chapter_num": 6,
+      "part": 1,
+      "title": "Electromagnetic Induction",
+      "path": "NOTEBOOKS\\XII-Physics Part 1\\Chapter 6 - Electromagnetic Induction.pdf"
+    },
+    {
+      "chapter_num": 7,
+      "part": 1,
+      "title": "Alternating Current",
+      "path": "NOTEBOOKS\\XII-Physics Part 1\\Chapter 7 - Alternating Current.pdf"
+    },
+    {
+      "chapter_num": 8,
+      "part": 1,
+      "title": "Electromagnetic Waves",
+      "path": "NOTEBOOKS\\XII-Physics Part 1\\Chapter 8 - Electromagnetic Waves.pdf"
+    },
+    {
+      "chapter_num": 1,
+      "part": 2,
+      "title": "Ray Optics and Optical Instruments",
+      "path": "NOTEBOOKS\\XII-Physics Part 2\\Chapter 1 - Ray Optics and Optical Instruments.pdf"
+    },
+    {
+      "chapter_num": 2,
+      "part": 2,
+      "title": "Wave Optics",
+      "path": "NOTEBOOKS\\XII-Physics Part 2\\Chapter 2 - Wave Optics.pdf"
+    },
+    {
+      "chapter_num": 3,
+      "part": 2,
+      "title": "Dual Nature of Radiation and Matter",
+      "path": "NOTEBOOKS\\XII-Physics Part 2\\Chapter 3 - Dual Nature of Radiation and Matter.pdf"
+    },
+    {
+      "chapter_num": 4,
+      "part": 2,
+      "title": "Atoms",
+      "path": "NOTEBOOKS\\XII-Physics Part 2\\Chapter 4 - Atoms.pdf"
+    },
+    {
+      "chapter_num": 5,
+      "part": 2,
+      "title": "Nuclei",
+      "path": "NOTEBOOKS\\XII-Physics Part 2\\Chapter 5 - Nuclei.pdf"
+    },
+    {
+      "chapter_num": 6,
+      "part": 2,
+      "title": "Semiconductor Electronics - Materials, Devices and Simple Circuits",
+      "path": "NOTEBOOKS\\XII-Physics Part 2\\Chapter 6 - Semiconductor Electronics - Materials, Devices and Simple Circuits.pdf"
+    }
+  ]
+}
