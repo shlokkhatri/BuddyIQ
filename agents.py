@@ -61,6 +61,27 @@ def resource_finder_agent():
         verbose = True,
 )
 
+# This agent is responsible for generating a concise cheatsheet for the user to quickly review and reinforce their understading of their weak topics
+
+def cheatsheet_agent ():
+    return Agent(
+        role = "Cheatsheet Agent",
+        goal = (
+            "Generate a concise, well-organized cheatsheet summarizing "
+            "key conncepts, formulas and definitions for a given weak topics,"
+            "to help the user quickly review and reinforce their understanding "
+        ),
+        backstory = (
+            "You are an expert educator who can distill complex information into"
+            "clear,easy to understannd and remember cheatsheets. You focus on the"
+            "most important concepts and forulas, providing clear explanations and"
+            "exampples to aid in compreahension and retention"
+        ),
+        llm = llm,
+        verbose = True,
+    )
+
 quiz_generator = build_quiz_generator_agent()
 answer_evaluator = build_answer_evaluator_agent()
 resource_finder = resource_finder_agent()
+cheatsheet = cheatsheet_agent()
