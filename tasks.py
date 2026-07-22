@@ -39,3 +39,40 @@ def build_evaluation_task(quiz_json: str, student_answers: dict, agent):
         expected_output="A single valid JSON object matching the specified shape, nothing else.",
         agent=agent,
     )
+
+def build_resource_task(subject:str, weak_topics:list, agent):
+    topics_str = ", ".join(weak_topics)
+    return Task(
+        description = (
+            f"""The student is studying '{subject}' and struggled with the 
+            following topics : '{topics_str}' . For each weak topic, search
+            the web and find the single best educational video or artical
+            that explain that exact concept ; prefer reputable source(Khan 
+            academy, university course pages, well-regarded educational 
+            channels, official docs for technical subjects).  Don't just 
+            link generic search results page. Return only valid JSON (No 
+            markdown, No commentary) in this exact shape :
+            {{"resources": [{{"topic": "...", "title": "...", "url": "...", 
+            "type": "video"}}]}}
+            valid "type" values: "vedio", "artical". One entry per weak topic .
+            """
+        ),
+    expected_output = "A single valid JSON object matching the specified shape, nothinng else. ",
+    agent = agent
+    )
+
+def build_cheatsheet_task(subject:str, weak_topics:list, resource_json:str, agent):
+    return Task(
+        description =  (
+            f"""The student is studing '{subject}' and struggled with these
+            cocepts : {', '.join(weak_topics)}. --- RESOURCES FOUNDED FOR THISS TOPICS ---\n
+            {resource_json}\n\nCompile a condensed cheat sheet : for EACH weak topic, give one
+            tight (1-2 sentences). Order topics from highest risk(most fundaamental / most 
+            likely to reappear) to lowest.\n\nReturn ONLY valid JSON (No markdown, No commmentay)
+            in thisexact shape : \n{{"items": [{{"topic": "...", "rule": "...", "risk": "high"}}]}}\n
+            Valid "risk" values: "high", "medium", "low".
+            """
+        ),
+        expected_output = "A single valid JSON object matching the specified shape, nothing else. ",
+        agent = agent
+    )
