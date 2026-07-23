@@ -1,9 +1,11 @@
 import json
+import argparse
 from crewai import Crew, Process
 from llm_config import get_llm
-from agents import quiz_generator, answer_evaluator
-from tasks import build_quiz_task, build_evaluation_task
+from agents import quiz_generator, answer_evaluator, resource_finder, cheatsheet
+from tasks import build_quiz_task, build_evaluation_task, build_cheatsheet_task, build_resource_task
 from notebook_loader import get_notebook_index, extract_chapter_text
+from crew import run_resource_stage, run_quiz_stage, run_cheatsheet_stage, run_evaluation_stage
 
 
 def choose_from_list(prompt, options):
@@ -149,3 +151,17 @@ if eval_data.get("weak_topics"):
     print("\nWeak topics to review:")
     for topic in eval_data["weak_topics"]:
         print(f"  - {topic}")
+
+    print("\nFinding Resource for your Weak Topics...")
+    resources = run_resource_stage(subject, eval_data["weak_topics"])
+
+    print("\nCompiling your Cheat-Sheet !")
+    cheatsheet_data = run_cheatsheet_stage(
+        subject, eval_data["weak_topics"], json.dumps(resources)
+    )
+
+    print("\n~~~CHEAT SHEET~~~\n")
+    for item in cheatsheet_data["items"]:
+        print(f"[{item['risk'].upper()}] {item['topic']} : {item['rule']}")
+else:
+    print("Yay! No Weak Topics - Nothing further to review")
