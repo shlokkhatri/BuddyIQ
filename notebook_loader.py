@@ -25,44 +25,66 @@ def extract_chapter_text(pdf_path: str, max_chars: int = 15000) -> str:
             continue
     return full_text.strip()[:max_chars]
 
-def discover_notebook(root: Path = NOTEBOOK_ROOT) -> dict:
+def discover_notebook(root: Path = NOTEBOOK_ROOT):
     """
-    Scans NOTEBOOKS/XII-<Subject>[ Part N]/Chapter N - Title.pdf and returns:
+    Returns
+
     {
-      "Physics": [{"chapter_num": 1, "part": 1, "title": "...", "path": "..."}],
-      ...
+        "XII":{
+            "Physics":[...],
+            "Chemistry":[...]
+        },
+        "XI":{
+            ...
+        }
     }
     """
-    subjects = {}
 
-    for folder in sorted(root.iterdir()):
-        if not folder.is_dir() or folder.name == "_extras":
+    standards = {}
+
+    for standard_folder in sorted(root.iterdir()):
+
+        if not standard_folder.is_dir():
             continue
 
-        name = folder.name.replace("XII-", "")
-        part_match = re.search(r"Part (\d)", name)
-        part = int(part_match.group(1)) if part_match else 1
-        subject = re.sub(r"\s*Part \d", "", name).strip()
+        standard = standard_folder.name
 
-        subjects.setdefault(subject, [])
+        standards[standard] = {}
 
-        for pdf_file in sorted(folder.glob("*.pdf")):
-            match = CHAPTER_FILE_PATTERN.match(pdf_file.stem)
-            if not match:
+        for subject_folder in sorted(standard_folder.iterdir()):
+
+            if not subject_folder.is_dir():
                 continue
 
-            chapter_num, title = match.groups()
-            subjects[subject].append({
-                "chapter_num": int(chapter_num),
-                "part": part,
-                "title": title.strip(),
-                "path": str(pdf_file),
-            })
+            name = subject_folder.name
 
-    for subject in subjects:
-        subjects[subject].sort(key=lambda c: (c["part"], c["chapter_num"]))
+            part_match = re.search(r"Part (\d)", name)
 
-    return subjects
+            part = int(part_match.group(1)) if part_match else 1
+
+            subject = re.sub(r"\s*Part \d", "", name).strip()
+
+            standards[standard].setdefault(subject, [])
+
+            for pdf_file in sorted(subject_folder.glob("*.pdf")):
+
+                match = CHAPTER_FILE_PATTERN.match(pdf_file.stem)
+
+                if not match:
+                    continue
+
+                chapter_num, title = match.groups()
+
+                standards[standard][subject].append(
+                    {
+                        "chapter_num": int(chapter_num),
+                        "part": part,
+                        "title": title.strip(),
+                        "path": str(pdf_file),
+                    }
+                )
+
+    return standards
 
 
 def get_notebook_index(force_refresh: bool = False) -> dict:
